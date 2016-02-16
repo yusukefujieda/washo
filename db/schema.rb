@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151220043001) do
+ActiveRecord::Schema.define(version: 20160216040600) do
+
+  create_table "guides", force: :cascade do |t|
+    t.integer  "shop",       limit: 4
+    t.string   "name",       limit: 255
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "reviews", force: :cascade do |t|
     t.datetime "created_at"
