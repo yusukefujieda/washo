@@ -1,3 +1,26 @@
 // Place all the styles related to the shops controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.content_post{
+  margin:0 0 15px 0;
+}
+
+.content_post h2{
+  margin:0 auto;
+}
+
+.photo{
+  display:block;
+  margin:0 auto;
+  width:100%;
+}
+
+.text{
+  padding:0 0 10px 0;
+}
+
+hr{
+  border-top: 1px solid #8c8b8b;
+  border-bottom: 1px solid #fff;
+}

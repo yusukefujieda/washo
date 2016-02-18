@@ -1,5 +1,10 @@
-<div class="content_post"> 
-<p> <%= br(shop.name) %> </p> 
-  <img src = "<%= shop.image %>" width = "150" height = "150" >
-<span class="name"><%= shop.text %></span> 
+<div class="content_post">
+ <div>
+  <img src = "<%= shop.image %>" height = "180" class="photo">
+ </div>
+  <h2> <%= br(shop.name) %> </h2>
+  <div class="text">
+  <span><%= shop.text %></span>
+  <hr />
+  </div>
 </div>

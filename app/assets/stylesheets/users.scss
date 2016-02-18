@@ -1,0 +1,132 @@
+$off-black: #404041;
+$cream: #f1e0cd;
+$base-pink: #da609b;
+$light-pink: #d88bac;
+
+@mixin transition {
+  transition: color 0.5s ease;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: $cream;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+p {
+  font-size: 1.75rem;
+}
+
+#Profile {
+  margin: 6rem auto 0;
+  background: white;
+  max-width: 80%;
+}
+
+#user {
+  padding: 2.5rem;
+}
+
+#img {
+  width: 120px;
+  height: 120px;
+  background: $base-pink url("https://s3.amazonaws.com/uifaces/faces/twitter/pixeliris/128.jpg") top center no-repeat;
+  display: block;
+  margin: 4rem auto 0;
+  border-radius: 50%;
+}
+
+#social a {
+  margin: 0 0.5rem;
+}
+
+i[class*="2x"] {
+  color: $base-pink;
+}
+
+i[class*="1x"] {
+  @include transition;
+  color: white;
+  &:hover {
+    color: $cream;
+  }
+}
+
+#navigation ul {
+  background: $base-pink;
+  i {
+    color: $cream;
+  }
+  li.active {
+    i {
+      color: $base-pink;
+    }
+    &:hover {
+      i {
+        color: white;
+      }
+    }
+  }
+}
+
+.nav-tabs {
+  border: none;
+}
+
+.tab-pane {
+  padding: 10% 10% 2%;
+}
+
+.nav-tabs.nav-justified>li>a {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  &:hover {
+    background: $light-pink;
+  }
+}
+
+.progress-bar {
+  background-color: $base-pink;
+}
+
+label, input {
+  margin-bottom: 1.25rem;
+}
+
+label {
+  font-size: 1.75rem;
+  color: $base-pink;
+  small {
+    color: $light-pink;
+    font-size: 1.25rem;
+    margin-left: 0.25rem;
+  }
+}
+
+.form-control:focus {
+  border-color: $light-pink;
+  box-shadow: 0 0 0.5rem $light-pink;
+}
+
+button[type="submit"] {
+  margin-top: 2rem;
+  background: $base-pink;
+  border-color: $base-pink;
+  color: white;
+  transition: color 0.5s ease;
+  &:hover {
+    background: $base-pink;
+    border-color: $base-pink;
+    color: $cream;
+  }
+}
+

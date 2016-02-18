@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
-  get 'top' => 'top#index'
+  root to: 'top#index'
   get 'shops' => 'shops#index'
-  get 'shops' => 'shops#show'
-  post 'guides' => 'guides#create'
-  get 'reviews' => 'reviews#new'
-  post 'reviews' => 'reviews#create'
+  get 'shops/show' => 'shops#show'
+  post 'guides/create' => 'guides#create'
+  get 'reviews/new' => 'reviews#new'
+  post 'reviews/create' => 'reviews#create'
   devise_for :users
+  get 'users/:id' => 'users#show'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
