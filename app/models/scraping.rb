@@ -10,8 +10,10 @@ class Scraping
      links << ele.get_attribute('href')
     end
    next_link = current_page.at('.page-move__target.page-move__target--next')
+   break unless next_link
    next_url = next_link.get_attribute('href')
    break unless next_url
+
   end
 
   links.each do |link|
