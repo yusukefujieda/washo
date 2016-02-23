@@ -7,14 +7,19 @@
 .popular-shop-block {
   margin-top: 25px;
 
-  .shop-image {
-    float: left;
-    width: 30%;
-
+.shop-image {
+  float: left;
+  width: 30%;
     img {
       width: 100%;
     }
   }
+
+.shop-title {
+  padding: 2px 5px;
+  font-weight: bold;
+  background-color: #ffcc99;
+}
 
   .shop-detail {
     float: right;
