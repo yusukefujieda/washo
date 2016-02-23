@@ -1,14 +1,16 @@
 <div id="contents">
- <h1 class="shop-title">店名</h1>
+ <h1 class="showpage-shop-title"><%= @shop.name %></h1>
   <div>
-   <img src="http://livedoor.blogimg.jp/naganouradoori/imgs/8/5/85976438.jpg" class="photo">
+    <img src="<%= @shop.image %>" class="photo">
   </div>
+  
+  <input type="checkbox" name="toggle" id="toggle" />
+  <label for="toggle"></label>
   <div class="button-container">
-    <a href="#" class="button">Go!</a>
-    <a href="#" class="button">Guide!</a>
-</div>
+    <div class="message"><h1> hello, I'm a hidden message. You found it.</h1>
+    </div>
   </div>
-  <h3 class="shop">お店の説明</h3>
+  <h3 class="shop"><%= @shop.text %></h3>
   <hr />
   <h2 class="shop">レビュー</h2>
  <div id="review" >
