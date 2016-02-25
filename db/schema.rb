@@ -14,8 +14,9 @@
 ActiveRecord::Schema.define(version: 20160216040600) do
 
   create_table "guides", force: :cascade do |t|
-    t.integer  "shop",       limit: 4
-    t.string   "name",       limit: 255
+    t.integer  "shop_id",    limit: 4
+    t.integer  "user_id",    limit: 4
+    t.integer  "category",   limit: 4
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -48,6 +49,10 @@ ActiveRecord::Schema.define(version: 20160216040600) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip",     limit: 255
     t.string   "last_sign_in_ip",        limit: 255
+    t.string   "confirmation_token",     limit: 255
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.string   "unconfirmed_email",      limit: 255
     t.datetime "created_at",                                      null: false
     t.datetime "updated_at",                                      null: false
   end

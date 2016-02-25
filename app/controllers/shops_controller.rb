@@ -5,5 +5,7 @@ class ShopsController < ApplicationController
   end
 
   def show
+    @shop = Shop.find(params[:id])
+    @review = Review.new
   end
 end

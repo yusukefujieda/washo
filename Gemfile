@@ -50,4 +50,5 @@ gem 'devise'
 gem 'paperclip'
 gem 'kaminari'
 gem 'bootstrap-material-design', '0.1.4'
+gem 'haml-rails'
 

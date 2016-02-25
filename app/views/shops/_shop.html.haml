@@ -1,0 +1,9 @@
+.popular-shop-block
+  .clearfix
+    .shop-image
+      %img{:height => "220", :src => shop.image}/
+    .shop-detail
+      .shop-title
+        = br(shop.name)
+      .shop-description
+        = shop.text

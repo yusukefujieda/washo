@@ -1,3 +1,70 @@
 // Place all the styles related to the top controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.head-img {
+  background: url("/images/washoku.jpg");
+  background-size: cover;
+  height:400px;
+}
+
+.search-box {
+  width: 70%;
+  height: 200px;
+  margin: 0 auto;
+  padding: 50px 20px 0;
+  background-color: white;
+  opacity: .9;
+}
+
+.search-text-field {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 80%;
+  font-size: 50px;
+}
+
+.search-lang-select {
+  width: 100px;
+  height: 50px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+}
+
+.popular-shops {
+  width: 90%;
+  margin: 0 auto;
+
+  h2 {
+    color: #666;
+    border-bottom: 1px solid orange;
+  }
+}
+
+.popular-shop-block {
+  margin-top: 25px;
+
+  .shop-image {
+    float: left;
+    width: 30%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .shop-detail {
+    float: right;
+    width: 65%;
+
+    .shop-title {
+      padding: 2px 5px;
+      font-weight: bold;
+      background-color: #ffcc99;
+    }
+
+    .shop-description {
+      padding: 5px;
+    }
+  }
+}
