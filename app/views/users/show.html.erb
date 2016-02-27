@@ -1,43 +1,57 @@
 <div class="container">
   <section id="Profile">
-  </section>
-</div>
-<div id="user" class="text-center">
-  <div id="img">
-  </div>
-  <div id="name">
-    <h1>Maggie Wilson
-    </h1>
-    <h4>Pattern Designer
-    </h4>
-  </div>
-</div>
-<div id="content">
-  <div id="navigation">
-    <ul role="tablist" class="nav nav-tabs nav-justified">
-      <li role="presentation"><a href="#about" role="tab" data-toggle="tab"><i class="fa fa-user fa-3x"></i></a>
-      </li>
-      <li role="presentation"><a href="#skills" role="tab" data-toggle="tab"><i class="fa fa-trophy fa-3x"></i></a>
-      </li>
-    </ul>
-    <div class="tab-content">
-      <div id="about" role="tabpanel" class="tab-pane fade">
-        <h3>About Me
-        </h3>
-        <p>初めまして</p>
+    <div id="user" class="text-center">
+      <div id="img"></div>
+      <div id="name">
+        <h1>Maggie Wilson</h1>
+        <h4>Pattern Designer</h4>
       </div>
-
-      <div id="contact" role="tabpanel" class="tab-pane fade">
-        <h3>Message
-        </h3>
-        <form>
-        </form>
+      <div id="social"><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i></span></a><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook-f fa-stack-1x"></i></span></a><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-dribbble fa-stack-1x"></i></span></a><a href="#"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-behance fa-stack-1x"></i></span></a></div>
+    </div>
+    <div id="content">
+      <div id="navigation">
+        <ul role="tablist" class="nav nav-tabs nav-justified">
+          <li role="presentation"><a href="#about" role="tab" data-toggle="tab"><i class="fa fa-user fa-3x"></i></a></li>
+          <li role="presentation"><a href="#skills" role="tab" data-toggle="tab"><i class="fa fa-trophy fa-3x"></i></a></li>
+          <li role="presentation"><a href="#contact" role="tab" data-toggle="tab"><i class="fa fa-envelope-o fa-3x"></i></a></li>
+        </ul>
+        <div class="tab-content">
+          <div id="about" role="tabpanel" class="tab-pane fade">
+            <h3>About Me</h3>
+            <p>Whimsical, original surface and textile patterns designed to make you happy! Garden whimsy, friendly sea creatures and animals, yummy food, dazzling holiday, and loose florals is my specialty. </p>
+            <p>I am a freelance surface pattern designer creating hand-drawn designs with a fresh, modern vibe and sophisticated color palette for use in home decor, stationery, apparel, and a variety of other markets.</p>
+          </div>
+          <div id="skills" role="tabpanel" class="tab-pane fade">
+            <h3>Skills</h3>
+            <h4>Adobe Illustrator</h4>
+            <div class="progress">
+              <div role="progressbar" style="width: 90%;" class="progress-bar">90%</div>
+            </div>
+            <h4>Adobe Photoshop</h4>
+            <div class="progress">
+              <div role="progressbar" style="width: 70%;" class="progress-bar">70%</div>
+            </div>
+            <h4>Sketch by Bohemian Coding</h4>
+            <div class="progress">
+              <div role="progressbar" style="width: 40%;" class="progress-bar">40%</div>
+            </div>
+          </div>
+          <div id="contact" role="tabpanel" class="tab-pane fade">
+            <h3>Contact Me</h3>
+            <form>
+              <div class="form-group">
+                <label for="nameMessage">Name <small>Required</small></label>
+                <input id="nameMessage" required="required" type="text" placeholder="Your Name" class="form-control input-lg"/>
+                <label for="email">Email <small>Required</small></label>
+                <input id="email" required="required" type="email" placeholder="Email Address" class="form-control input-lg"/>
+                <label for="text">Message <small>Required | 280 Character Limit</small></label>
+                <textarea id="text" required="required" placeholder="Type Your Message Here" rows="3" maxlength="280" class="form-control input-lg"></textarea>
+                <button type="submit" class="btn btn-default btn-lg">Send a Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<div class="form-group">
-  <textarea id="text" required="required" placeholder="Type Your Message Here" rows="3" maxlength="280" class="form-control input-lg"></textarea>
-  <button type="submit" class="btn btn-default btn-lg">Send a Message
-  </button>
+  </section>
 </div>
