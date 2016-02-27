@@ -4,6 +4,7 @@
       %img{:height => "220", :src => shop.image}/
     .shop-detail
       .shop-title
-        = br(shop.name)
+        %a{href: "/shops/#{shop.id}"}
+          = br(shop.name)
       .shop-description
         = shop.text

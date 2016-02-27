@@ -81,37 +81,4 @@ hr{
   margin:0 0 0 0;
 }
 
-//以下スライドに関するコード
-input {
-  display: none;
-}
 
-label {
-  cursor: pointer;
-  display: inline-block;
-  padding: 10px 20px;
-  border: 1px solid;
-  border-radius: 4px;
-  background: #336600;
-  color: #FFF;
-  font-family: arial;
-  -webkit-transition: background-color 0.1s, color 0.1s;
-}
-
-label:hover {
-  background: #33CC00;
-  color: #000;
-}
-
-.test {
-  -webkit-transition: height .3s ease;
-  height: 0;
-  overflow: hidden;
-  width: 200px;
-  background: red;
-  margin-top: 10px;
-}
-
-input:checked + .test {
-  height: 100px;
-}

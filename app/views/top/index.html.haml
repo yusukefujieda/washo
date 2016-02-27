@@ -1,6 +1,6 @@
 .head-img
   .search-box
-    = form_tag 'shops/search' do
+    = form_tag 'shops/search',method: :get do
       = text_field_tag :keyword, nil, placeholder: 'free word', class: 'search-text-field' # 初期値がnil、nameがkeyword、classがsearch-text-field
       = image_submit_tag 'search-50.png'
       %br

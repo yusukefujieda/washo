@@ -6,16 +6,8 @@
     <img src="<%= @shop.image %>" class="photo">
   </div>
 
-  <label for="check">Go!</label>
-  <input id="check" type="checkbox">
-  <div class="test">
-    <p>I am some hidden text</p>
-  </div>
-  <label for="check">Guide!</label>
-  <input id="check" type="checkbox">
-  <div class="test">
-    <p>I am some hidden text</p>
-  </div>
+  <%= link_to 'Go', guide_path(shop_id: @shop.id, category: 1),method: :post %>
+  <%= link_to 'Guide', guide_path(shop_id: @shop.id, category: 0),method: :post %>
 
   <h3 class="shop"><%= @shop.text %></h3>
   <hr />

@@ -52,3 +52,7 @@ gem 'kaminari'
 gem 'bootstrap-material-design', '0.1.4'
 gem 'haml-rails'
 
+group :production, :staging do
+  gem 'rails_12factor'
+end
+
