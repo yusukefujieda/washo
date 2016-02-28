@@ -19,6 +19,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Josefin Sans", sans-serif;
 }
@@ -35,6 +36,10 @@ p {
 
 #user {
   padding: 2.5rem;
+}
+
+#name{
+  text-align:center;
 }
 
 #img {
@@ -114,20 +119,4 @@ label {
   }
 }
 
-.form-control:focus {
-  border-color: $light-pink;
-  box-shadow: 0 0 0.5rem $light-pink;
-}
 
-button[type="submit"] {
-  margin-top: 2rem;
-  background: $base-pink;
-  border-color: $base-pink;
-  color: white;
-  transition: color 0.5s ease;
-  &:hover {
-    background: $base-pink;
-    border-color: $base-pink;
-    color: $cream;
-  }
-}
